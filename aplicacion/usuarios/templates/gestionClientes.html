@@ -1,0 +1,40 @@
+ 
+ <!--{% extends "./plantilla.html" %} 
+ 
+ {% block body %}
+  
+  <div class="row">
+     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-4">
+          <h3> Gestion de servicios</h3>
+          <div class="cord">
+           </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 col-xl-8">
+         <h1>servicios </h1>
+         <div class="table-responsive py-2">
+            <table class=" table table-striped">
+               <thead >
+                 <tr>
+                    <th> Nombre</th>
+                    <th> Tipo_doc</th>
+                    <th> Documento</th>
+                    <th> Correo</th>
+                    <th> Telefono</th>
+                    <th> Direccion</th>
+                    <th> Ciudad</th>
+                    <th> Estados</th>
+                 </tr>
+               </thead>
+               <tbody>
+                    {% for per in personas%}
+                  <tr>
+                     <td>{{per.nombre}} </td>
+                  </tr>
+                    {% endfor %}
+               </tbody>
+            </table>
+         </div>
+      </div>
+
+  </div>
+ {% endblock %}
